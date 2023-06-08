@@ -1,0 +1,158 @@
+*{
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: myFont;
+    src: url(https://fonts.google.com/specimen/DM+Sans);
+}
+html{
+    font-family: myFont;
+}
+body{
+    background-color: hsl(27, 66%, 92%);
+}
+main{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+}
+p{
+    font-size: 18px;
+}
+.balance{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 40px;
+}
+.balance h3{
+    margin-top: 2px;
+    margin-bottom: 0;
+    color: hsl(33, 100%, 98%);
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.balance p{
+    margin-bottom: 2px;
+    color: hsl(33, 100%, 98%);
+    font-weight: 400;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 20px;
+    background: linear-gradient(90deg,hsl(9, 62%, 65%),rgb(233, 94, 67));
+    margin-bottom: 20px;
+}
+.circle-container{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 4rem;
+}
+.circles{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+}
+.one{
+    background-color: transparent;
+    border: 2px solid hsl(33, 100%, 98%);
+    left: 30%;
+    z-index: 999;
+}
+.two{
+    background-color: hsl(25, 47%, 15%);
+    border: 2px solid hsl(25, 47%, 15%);
+    right: 30%;
+}
+.container{
+    background-color: hsl(33, 100%, 98%);
+    border-radius: 20px;
+    padding: 1rem;
+}
+.container h4{
+    color: hsl(25, 47%, 15%);
+    font-size: 1.5rem;
+    margin: 0 auto 10px 20px;
+}
+.days-container{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    height: 250px;
+}
+.enclose{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:150px;
+    margin:2rem 0 0 0;
+}
+.days{
+    width: 70px;
+    background:hsl(10, 79%, 65%);
+    border-radius: 5px;
+}
+.enclose label{
+    font-weight: 400;
+    font-size: 0.6rem;
+    color: hsl(28, 10%, 53%);
+}
+.info{
+    background-color: hsl(25, 47%, 15%);
+    color: hsl(33, 100%, 98%);
+    font-weight: 700;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 0 1rem;
+    visibility: hidden;
+}
+hr{
+    margin: 50px 20px;
+    background-color: hsl(30, 3%, 75%);
+    border: 1px solid transparent;
+}
+.bottom{
+    margin-bottom: -20px;
+    margin-top: 10px;
+    color: hsl(28, 10%, 53%);
+}
+.left{
+    margin-left: 20px;
+}
+.big{
+    font-size: 2rem;
+    font-weight: 700;
+    color:hsl(25, 47%, 15%);
+    display: block;
+}
+.small{
+    color: hsl(25, 47%, 15%);
+    font-weight: 700;
+}
+.right{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: relative;
+    bottom: 2.2rem;
+    right: 20px;
+}
+.attribution {
+    font-size: 13px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }

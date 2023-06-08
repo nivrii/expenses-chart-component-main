@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Frontend Mentor | Expenses chart component</title>
+  </head>
+  <body>
+    <main>
+      <div class="header" role="content header">
+        <div class="balance">
+          <p>My balance</p>
+          <h3>$921.48</h3>
+        </div>
+        <div class="circle-container">
+          <div class="circles one"></div>
+          <div class="circles two"></div>
+        </div>
+      </div>
+
+      <div class="container" role="content body">
+        <h4>Spending - Last 7 days</h4>
+        <div class="days-container">
+          <div class="enclose">
+            <div class="info"></div>
+            <div class="days" id="mon"></div>
+            <label for="mon">mon</label>
+          </div>
+          <div class="enclose">
+            <div class="info"></div>
+            <div class="days" id="tue"></div>
+            <label for="tue">tue</label>
+          </div>
+          <div class="enclose">
+            <div class="info"></div>
+            <div class="days" id="wed"></div>
+            <label for="wed">wed</label>
+          </div>
+          <div class="enclose">
+            <div class="info"></div>
+            <div class="days" id="thur"></div>
+            <label for="thur">thur</label>
+          </div>
+          <div class="enclose">
+            <div class="info"></div>
+            <div class="days" id="fri"></div>
+            <label for="fri">fri</label>
+          </div>
+          <div class="enclose">
+            <div class="info"></div>
+            <div class="days" id="sat"></div>
+            <label for="sat">sat</label>
+          </div>
+          <div class="enclose">
+            <div class="info"></div>
+            <div class="days" id="sun"></div>
+            <label for="sun">sun</label>
+          </div>
+        </div>
+        <hr />
+        <p class="bottom">
+          <span class="left">Total this week</span> <span class="big left" id="big"></span>
+          <span class="small right">+2.4%</span><span class="right"> from last week</span>
+        </p>
+      </div>
+    
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
