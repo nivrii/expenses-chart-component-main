@@ -1,15 +1,10 @@
+@import url(https://fonts.google.com/specimen/DM+Sans);
 *{
     box-sizing: border-box;
 }
-@font-face {
-    font-family: myFont;
-    src: url(https://fonts.google.com/specimen/DM+Sans);
-}
-html{
-    font-family: myFont;
-}
 body{
     background-color: hsl(27, 66%, 92%);
+    font-family: 'DM Sans',sans-serif;
 }
 main{
     position: fixed;
@@ -22,7 +17,7 @@ p{
     font-size: 18px;
 }
 .balance{
-    width: 70%;
+    width: 90%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -55,34 +50,35 @@ p{
     position: relative;
     align-items: center;
     justify-content: center;
-    padding: 2rem 4rem;
+    padding: 1rem 2rem;
 }
 .circles{
     border-radius: 50%;
-    height: 50px;
-    width: 50px;
-    position: absolute;
+    height: 60px;
+    width: 60px;
+    position: relative;
 }
 .one{
     background-color: transparent;
     border: 2px solid hsl(33, 100%, 98%);
-    left: 30%;
     z-index: 999;
+    left: 12.5%;
 }
 .two{
     background-color: hsl(25, 47%, 15%);
     border: 2px solid hsl(25, 47%, 15%);
-    right: 30%;
+    right: 12.5%;
 }
 .container{
     background-color: hsl(33, 100%, 98%);
     border-radius: 20px;
     padding: 1rem;
+    height: max-content;
 }
 .container h4{
     color: hsl(25, 47%, 15%);
     font-size: 1.5rem;
-    margin: 0 auto 10px 20px;
+    margin: 0 auto 30px 20px;
 }
 .days-container{
     display: flex;
@@ -96,8 +92,8 @@ p{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width:150px;
-    margin:2rem 0 0 0;
+    width:  calc(100% / 7);
+    margin:2.5rem  0 0;
 }
 .days{
     width: 70px;
@@ -106,7 +102,8 @@ p{
 }
 .enclose label{
     font-weight: 400;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
+    margin-top: 10px;
     color: hsl(28, 10%, 53%);
 }
 .info{
@@ -119,7 +116,7 @@ p{
     visibility: hidden;
 }
 hr{
-    margin: 50px 20px;
+    margin: 40px 20px;
     background-color: hsl(30, 3%, 75%);
     border: 1px solid transparent;
 }
@@ -136,6 +133,7 @@ hr{
     font-weight: 700;
     color:hsl(25, 47%, 15%);
     display: block;
+    margin-top: 10px;
 }
 .small{
     color: hsl(25, 47%, 15%);
@@ -154,5 +152,148 @@ hr{
     text-align: center;
   }
   .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: hsl(4, 100%, 67%);
+    font-weight: 700;
+    text-decoration: none;
+  }
+  @media only screen and (max-width:800px){
+    main{
+        width: 90%;
+    }
+    p{
+        font-size: 15px;
+    }
+    .balance h3{
+        margin: 2px 0;
+        font-size: 1.2rem;
+    }
+    .balance{
+        padding: 0 20px;
+    }
+    .balance p{
+        margin-bottom: 1px;
+    }
+    .header{
+        padding: 0.8rem;
+        margin-bottom: 20px;
+    }
+    .circle-container{
+        padding: 0.5rem;
+    }
+    .circles{
+        height: 60px;
+        width: 60px;
+    }
+    .container{
+        padding: 0.5rem;
+    }
+    .container h4{
+        font-size: 1.2rem;
+        text-align: left;
+    }
+    .days-container{
+        height: 250px;
+    }
+    .enclose{
+        width:  calc(100% / 10);
+        margin:2rem 10px 0 10px;
+    }
+    .days{
+        width: 55px;
+        margin-bottom: 20px;
+    }
+    .enclose label{
+        font-size: 0.8rem;
+        margin-top: 0;
+    }
+    .info{
+        margin-bottom: 5px;
+        padding: 0 0.5rem;
+    }
+    hr{
+        margin: 20px 20px;
+    }
+    .big{
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+    .right{
+        bottom: 1.4rem;
+    }
+    .attribution {
+       display: none;
+      }
+  }
+  @media only screen and (max-width:500px){
+    main{
+        width: 90%;
+    }
+    p{
+        font-size: 14px;
+    }
+    .balance h3{
+        margin: 2px 0;
+        font-size: 1rem;
+    }
+    .balance{
+        padding: 0 20px;
+    }
+    .balance p{
+        margin-bottom: 1px;
+    }
+    .header{
+        padding: 0.5rem;
+        margin-bottom: 20px;
+    }
+    .circle-container{
+        padding: 0.5rem;
+    }
+    .circles{
+        height: 50px;
+        width: 50px;
+    }
+    .container{
+        padding: 0.5rem;
+    }
+    .container h4{
+        font-size: 1rem;
+        text-align: left;
+    }
+    .days-container{
+        height: 250px;
+    }
+    .enclose{
+        width:  calc(100% / 8);
+        margin:2rem 0 0 0;
+    }
+    .days{
+        width: 35px;
+        margin-bottom: 20px;
+    }
+    .enclose label{
+        font-size: 0.5rem;
+        margin-top: 0;
+    }
+    .info{
+        margin-bottom: 5px;
+        padding: 0 0.2rem;
+    }
+    hr{
+        margin: 20px 20px;
+    }
+    .big{
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+    .right{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        position: relative;
+        bottom: 1.4rem;
+        right: 20px;
+    }
+    .attribution {
+       display: none;
+      }
   }

@@ -6,12 +6,15 @@ const info = document.getElementsByClassName("info");
 const infoElements = Array.from(info);
 const total = document.getElementById("big");
 
+const sum = height.reduce((incr, tot) => incr + tot, 0);
+total.textContent = "$"+sum;
+
 let max = Math.max(...height);
 let index = height.indexOf(max);
 dayElements[index].style.backgroundColor = "hsl(186, 34%, 60%)";
 
 for (let i = 0; i < height.length; i++) {
-  dayElements[i].style.height = height[i] * 3 + "px";
+  dayElements[i].style.height = height[i] * 3.5 + "px";
 }
 
 for (let j = 0; j < height.length; j++) {
@@ -36,5 +39,4 @@ for (let j = 0; j < height.length; j++) {
     });
   });
 }
-const sum = height.reduce((incr, tot) => incr + tot, 0);
-total.textContent = "$"+sum;
+
